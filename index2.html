@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo PowerUP - Edição Automática de Fotos com Sua Marca</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8f9fa; color: #333; }
+        
+        .header {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .pricing-cards {
+            display: flex;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            border: 2px solid #e9ecef;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #25D366;
+        }
+        
+        .card.popular {
+            border-color: #25D366;
+            position: relative;
+        }
+        
+        .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #25D366;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            color: #25D366;
+            margin: 20px 0;
+        }
+        
+        .btn-whatsapp {
+            display: block;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #128C7E;
+        }
+        
+        .features { margin: 30px 0; }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .testimonials {
+            background: white;
+            padding: 50px 20px;
+            margin: 40px 0;
+            border-radius: 15px;
+        }
+        
+        .guarantee {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            color: #333;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <div class="header">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 20px;">
+        <img src="logo.png" 
+             alt="Logo Photo PowerUP" 
+             style="height: 100px; width: auto; border-radius: 10px;">
+        <div>
+            <h1 style="margin: 0;">🚀 Photo PowerUP</h1>
+            <h2 style="margin: 5px 0;">Seus Seminovos Merecem Fotos Profissionais</h2>
+        </div>
+    </div>
+    <p>Edição automática + Sua Marca + WhatsApp por menos de R$ 1 por foto!</p>
+</div>
+
+    <div class="container">
+        
+        <!-- COMPARAÇÃO -->
+        <div style="text-align: center; margin: 50px 0;">
+            <h2>Você paga <span style="color: red; text-decoration: line-through;">R$ 15 por foto</span> com um designer...</h2>
+            <h1 style="color: #25D366;">Ou <span style="font-size: 48px;">R$ 0,95</span> com nossa tecnologia!</h1>
+            <p><strong>Economize 90% e ganhe tempo para vender mais</strong></p>
+        </div>
+
+        <!-- PACOTES -->
+        <h2 style="text-align: center; margin: 40px 0;">ESCOLHA SEU PACOTE</h2>
+        
+        <div class="pricing-cards">
+            
+            <!-- PACOTE 50 FOTOS -->
+            <div class="card">
+                <h3>🚀 PACOTE TESTE</h3>
+                <p>Ideal para começar ou pequenos lotes</p>
+                <div class="price">R$ 50</div>
+                <p><strong>50 fotos</strong> (R$ 1,00 cada)</p>
+                
+                <div class="features">
+                    <div class="feature-item">✅ 50 fotos editadas automaticamente</div>
+                    <div class="feature-item">✅ Sua marca/logotipo incluída</div>
+                    <div class="feature-item">✅ WhatsApp na marca d'água</div>
+                    <div class="feature-item">✅ Correção de cor e brilho</div>
+                    <div class="feature-item">✅ Entrega em 48h úteis</div>
+                </div>
+                
+                <a href="https://wa.me/5519983770861?text=Quero%20o%20Pacote%20Teste%2050%20fotos%20por%20R%2450" 
+                   class="btn-whatsapp" 
+                   target="_blank">
+                   📱 COMPRAR AGORA
+                </a>
+            </div>
+            
+            <!-- PACOTE 100 FOTOS (POPULAR) -->
+            <div class="card popular">
+                <div class="badge">⭐ MAIS VENDIDO</div>
+                <h3>🏆 PACOTE PRO</h3>
+                <p>Melhor custo-benefício</p>
+                <div class="price">R$ 95</div>
+                <p><strong>100 fotos</strong> (R$ 0,95 cada)</p>
+                <p style="background: #e8f5e9; padding: 10px; border-radius: 8px;">
+                    <strong>+10 FOTOS DE BÔNUS!</strong><br>
+                    Total: 110 fotos por R$ 95
+                </p>
+                
+                <div class="features">
+                    <div class="feature-item">✅ 100 fotos + 10 bônus (110 total)</div>
+                    <div class="feature-item">✅ Todas as features do Pacote Teste</div>
+                    <div class="feature-item">✅ Prioridade na fila de processamento</div>
+                    <div class="feature-item">✅ Nitidez profissional aplicada</div>
+                    <div class="feature-item">✅ Redução automática de ruído</div>
+                    <div class="feature-item">✅ Suporte por WhatsApp</div>
+                </div>
+                
+                <a href="https://wa.me/5519983770861?text=Quero%20o%20Pacote%20Pro%20100%20fotos%20por%20R%2495" 
+                   class="btn-whatsapp" 
+                   target="_blank">
+                   🏆 QUERO O MAIS VENDIDO
+                </a>
+            </div>
+            
+            <!-- PACOTE 200 FOTOS -->
+<!-- bloqueio de código temporário até atingir 3 planos             
+            <div class="card">
+                <h3>💎 PACOTE PREMIUM</h3>
+                <p>Para lojas em crescimento</p>
+                <div class="price">R$ 297</div>
+                <p><strong>200 fotos</strong> (R$ 1,48 cada)</p>
+                
+                <div class="features">
+                    <div class="feature-item">✅ 200 fotos editadas</div>
+                    <div class="feature-item">✅ Entrega em 24-48h (prioridade)</div>
+                    <div class="feature-item">✅ Suporte VIP por WhatsApp</div>
+                    <div class="feature-item">✅ +20 fotos extras de brinde</div>
+                    <div class="feature-item">✅ Relatório de qualidade das fotos</div>
+                    <div class="feature-item">✅ Armazenamento por 30 dias</div>
+                </div>
+                
+                <a href="https://wa.me/5519983770861?text=Quero%20o%20Pacote%20Premium%20200%20fotos%20por%20R%24297" 
+                   class="btn-whatsapp" 
+                   target="_blank">
+                   💎 PEDIR PACOTE PREMIUM
+                </a>
+            </div>
+        </div>
+ -->
+        <!-- GARANTIA -->
+        <div class="guarantee">
+            <h2>⚠️ GARANTIA DE SATISFAÇÃO 100%</h2>
+            <p><strong>Se não gostar do resultado, devolvemos seu dinheiro!</strong></p>
+            <p>Processamos 10 fotos de teste grátis para você ver a qualidade antes de comprar.</p>
+        </div>
+
+        <!-- COMO FUNCIONA -->
+        <div style="background: white; padding: 40px; border-radius: 15px; margin: 40px 0;">
+            <h2 style="text-align: center;">🎯 COMO FUNCIONA?</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px; justify-content: center;">
+                <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <div style="background: #25D366; color: white; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; margin: 0 auto 15px; font-weight: bold;">1</div>
+                    <h3>Você envia suas fotos</h3>
+                    <p>Envie via WhatsApp, Google Drive ou WeTransfer</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <div style="background: #25D366; color: white; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; margin: 0 auto 15px; font-weight: bold;">2</div>
+                    <h3>Processamos automaticamente</h3>
+                    <p>Nosso software aplica todas as melhorias e sua marca</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <div style="background: #25D366; color: white; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; margin: 0 auto 15px; font-weight: bold;">3</div>
+                    <h3>Receba suas fotos prontas</h3>
+                    <p>Download em pasta organizada, prontas para publicar</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEPOIMENTOS -->
+<!-- bloqueio de código temporário até atingir depoimentos reais     
+        <div class="testimonials">
+            <h2 style="text-align: center;">📢 O QUE NOSSOS CLIENTES DIZEM</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+                <div style="flex: 1; min-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                    <p>"<em>Economizei R$ 500 na minha primeira coleção! As fotos ficaram perfeitas e meu WhatsApp explodiu de pedidos.</em>"</p>
+                    <p style="margin-top: 15px; font-weight: bold;">📍 Maria, loja de roupas</p>
+                </div>
+                <div style="flex: 1; min-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                    <p>"<em>Antes pagava R$ 20 por foto. Agora pago R$ 1,67 com qualidade igual. Revolucionou meu negócio!</em>"</p>
+                    <p style="margin-top: 15px; font-weight: bold;">📍 João, vendedor de eletrônicos</p>
+                </div>
+                <div style="flex: 1; min-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                    <p>"<em>O logotipo da minha loja ficou lindo nas fotos. Meus clientes agora me acham mais profissional.</em>"</p>
+                    <p style="margin-top: 15px; font-weight: bold;">📍 Carla, boutique online</p>
+                </div>
+            </div>
+        </div>
+-->
+        <!-- CHAMADA FINAL -->
+        <div style="text-align: center; margin: 50px 0; padding: 40px; background: linear-gradient(135deg, #128C7E 0%, #075E54 100%); color: white; border-radius: 15px;">
+            <h2>🎁 OFERTA ESPECIAL POR TEMPO LIMITADO</h2>
+            <p style="font-size: 24px; margin: 20px 0;">
+                <strong>100 FOTOS + 10 BÔNUS = R$ 95</strong>
+            </p>
+            <p>Apenas para os primeiros 10 clientes desta semana!</p>
+            <a href="https://wa.me/5511999999999?text=Quero%20a%20oferta%20especial%20de%20100%2B10%20fotos%20por%20R%24167" 
+               style="display: inline-block; background: white; color: #128C7E; padding: 15px 40px; border-radius: 10px; font-weight: bold; text-decoration: none; margin-top: 20px;">
+               🚀 QUERO A OFERTA ESPECIAL
+            </a>
+        </div>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <div style="background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>© 2025 Photo PowerUP - Todos os direitos reservados</p>
+        <p style="font-size: 14px; margin-top: 10px;">WhatsApp: (19) 98377-0861 | Email: photopowerup@gmail.com</p>
+    </div>
+
+</body>
+</html>
